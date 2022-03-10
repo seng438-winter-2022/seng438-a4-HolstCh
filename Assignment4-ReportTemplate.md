@@ -11,6 +11,7 @@
 
 # Introduction
 
+![SharedScreenshot](https://user-images.githubusercontent.com/81201946/157569542-4c580b2c-ea4b-4f88-8d49-637561bdc9d3.jpg)
 
 # Analysis of 10 Mutants of the Range class 
 
