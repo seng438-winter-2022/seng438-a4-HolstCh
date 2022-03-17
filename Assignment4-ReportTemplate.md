@@ -157,3 +157,20 @@ Furthermore, the lab report had many questions. Given that this assignment had t
 
 However, once we were able to overcome the technical hurdles with this lab, all group members were able to gain experience with mutation tests and GUI tests. As such, we can say that this assignment was good for our learning by reinforcing the concepts that were taught in the lectures. 
 
+SENG 438 Assignment 3 Test Designs:
+note: test 69 isn’t running for pitests so when running tests it will give one less test than are found in test suite
+note: 20 tests were written for lab 4 (tests 103-122)
+
+![1](https![2](https://user-images.githubusercontent.com/81201946/158879751-0069b969-f694-4791-8017-887fe1f58376.jpg)
+![2](https://user-images.githubusercontent.com/81201946/158879836-436f5882-c6bc-464e-9df4-efc8dbfbc942.jpg)
+![3](https://user-images.githubusercontent.com/81201946/158879765-a8b485df-60fd-4c82-87f7-6a8885215934.jpg)
+![4](https://user-images.githubusercontent.com/81201946/158879891-a440b54f-3718-47e6-b521-1221c27a5c6f.jpg)
+![5](https://user-images.githubusercontent.com/81201946/158879903-64e9263b-be8e-4125-bd78-3ee8016cbf25.jpg)
+Start of new tests for Lab 3:
+![6](https://user-images.githubusercontent.com/81201946/158880349-a6e21bac-7eee-42dc-aae5-d37c44b6ca5b.jpg)
+![7](https://user-images.githubusercontent.com/81201946/158880363-b84bc994-6c71-464a-a2cf-cdee3c6f577c.jpg)
+![8](https://user-images.githubusercontent.com/81201946/158880370-e7f4382e-6e53-4102-a3c3-9d9d592cbb2a.jpg)
+![9](https://user-images.githubusercontent.com/81201946/158880405-2f7686e2-2140-43ca-a877-4e3fa74d9d23.jpg)
+                                                         
+
+
