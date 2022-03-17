@@ -14,8 +14,8 @@
 In this assignment, we were tasked with engaging with two different kinds of testing: Mutation Testing and Graphical User interface (GUI) testing. Mutation testing, also known as Fault-based testing, involves the injection of artificial faults into the System Under Test (SUT). Syntactic (syntax-based) variations are applied in a systematic way to the SUT to create faulty versions of the program which exhibit different behaviors in comparison to the program's actual functionality. Mutant testing then seeks to help create a test suite that will be able to catch these faults.  In the first part of the lab. We injected mutation faults into a Java code-base using a mutation testing tool, the PIT Mutation test tool. Interpreted the mutation coverage data and developed new test cases to increase the mutation coverage of our test suites for the DataUtilities class and Range class. In the second part of the lab, we engaged in GUI test automation, recording and playing, which involved testing a product that implemented a graphical user interface using testing software tools, Selenium and SikuliX. We focused on semi-automated test generation using the capturing and replaying of user actions on the GUI using the testing tools.
 
 # Analysis of 10 Mutants of the Range class 
-![10Mutants](https://user-images.githubusercontent.com/81201946/158872787-e83d1b9c-9b30-428c-9637-93424a2b599c.jpg)
-![Mutant2](https://user-images.githubusercontent.com/81201946/158873002-09b24863-da98-4c63-affc-d65320ca7f3e.jpg)
+![Mutants_1](https://user-images.githubusercontent.com/81201946/158873389-4a2ac03a-0735-491e-b0b5-0391936a5384.jpg)
+![Mutants_2](https://user-images.githubusercontent.com/81201946/158873754-ea5f1fea-a49a-4d0b-976e-e773549788d1.jpg)
 # Report all the statistics and the mutation score for each test class
 
 Original Values of Mutation coverage for DataUtilities class and the Range class before test suite modification:
