@@ -125,7 +125,8 @@ Checkpoints (or breakpoints in Selenium) are commands used to pause or stop the 
 
 Testing each functionality with different test data greatly depends on the nature of the functionality. For example, to test the item search, the string containing the item to be searched for can be changed to find another item or replaced with a random combination of characters to check the behavior of an invalid search. On a different functionality such as removing an item from the cart, one test can be run when an item is present in the cart, and another test can be run when there are no items present in the cart.
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
-![Comparison](https://user-images.githubusercontent.com/81201946/158875397-405adeb1-350c-48cd-b6ae-51efdb664810.jpg)
+
+![Compare](https://user-images.githubusercontent.com/81201946/158878785-8fda415d-ccad-4d24-90fc-f5fa40fe8306.jpg)
 # How the team work/effort was divided and managed
 
 In order to divide the work for this assignment, two team members (Chace and Tony) focused on creating mutation tests for the Range class, and the other two team members (Chad and Oliseh) focused on creating mutation tests for the DataUtilities class. Throughout this process, all team members kept in contact in order to resolve any technical difficulties that arose and to ensure that everyone had the same mutation test scores on their computers.
