@@ -161,7 +161,7 @@ SENG 438 Assignment 3 Test Designs:
 note: test 69 isn’t running for pitests so when running tests it will give one less test than are found in test suite
 note: 20 tests were written for lab 4 (tests 103-122)
 
-![1](https![2](https://user-images.githubusercontent.com/81201946/158879751-0069b969-f694-4791-8017-887fe1f58376.jpg)
+![1](https://user-images.githubusercontent.com/81201946/158879751-0069b969-f694-4791-8017-887fe1f58376.jpg)
 ![2](https://user-images.githubusercontent.com/81201946/158879836-436f5882-c6bc-464e-9df4-efc8dbfbc942.jpg)
 ![3](https://user-images.githubusercontent.com/81201946/158879765-a8b485df-60fd-4c82-87f7-6a8885215934.jpg)
 ![4](https://user-images.githubusercontent.com/81201946/158879891-a440b54f-3718-47e6-b521-1221c27a5c6f.jpg)
