@@ -2,30 +2,74 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:       |   |
-|-----------------|---|
-| Student Names:  |   |
-| Chad Holst      |   |
-|                 |   |
-|                 |   |
+| Group \#:           |   |
+|---------------------|---|
+| Student Names:      |   |
+| Chad Holst          |   |
+| Chace Nielson       |   |
+| Tony Vo             |   |
+| Olisehemeka Chukwuma
 
 # Introduction
 In this assignment, we were tasked with engaging with two different kinds of testing: Mutation Testing and Graphical User interface (GUI) testing. Mutation testing, also known as Fault-based testing, involves the injection of artificial faults into the System Under Test (SUT). Syntactic (syntax-based) variations are applied in a systematic way to the SUT to create faulty versions of the program which exhibit different behaviors in comparison to the program's actual functionality. Mutant testing then seeks to help create a test suite that will be able to catch these faults.  In the first part of the lab. We injected mutation faults into a Java code-base using a mutation testing tool, the PIT Mutation test tool. Interpreted the mutation coverage data and developed new test cases to increase the mutation coverage of our test suites for the DataUtilities class and Range class. In the second part of the lab, we engaged in GUI test automation, recording and playing, which involved testing a product that implemented a graphical user interface using testing software tools, Selenium and SikuliX. We focused on semi-automated test generation using the capturing and replaying of user actions on the GUI using the testing tools.
 
 # Analysis of 10 Mutants of the Range class 
+![10Mutants](https://user-images.githubusercontent.com/81201946/158872787-e83d1b9c-9b30-428c-9637-93424a2b599c.jpg)
+![Mutant2](https://user-images.githubusercontent.com/81201946/158873002-09b24863-da98-4c63-affc-d65320ca7f3e.jpg)
+# Report all the statistics and the mutation score for each test class
+
 Original Values of Mutation coverage for DataUtilities class and the Range class before test suite modification:
 
 ![Coverage_Before](https://user-images.githubusercontent.com/81201946/158865790-d76111e5-5868-4ed9-9c90-6519eb7092e2.png)
 
-# Report all the statistics and the mutation score for each test class
+New Values of Mutation coverage for DataUtilities class and the Range class after test suite modification:
+
+![After_Coverage](https://user-images.githubusercontent.com/81201946/158866161-8d1c5a3e-c95c-4e93-897a-535471e493ea.png)
+
+Range Mutation coverage increase from 62% (782/1259) to 73% (913/1259) of mutants killed. It had a total of 131 mutant killed by additional tests.
+DataUtilities Mutation coverage increase from 86% (593/687) to 87% (598/687) of mutants killed. It had a total of 5 mutants killed by additional tests.
+
+DataUtilities already had very high Mutation coverage before starting this lab. After spending hours creating tests and looking for mutants to kill we decided that the overwhelming majority of the surviving mutants were equivalent mutants and that continuing with creating tests would be inefficient. 
+Range had a much lower mutation converge to start with and many more methods than DataUtilities. This made it easier to find mutants and to kill an additional 11% of them
 
 # Analysis drawn on the effectiveness of each of the test classes
+Analysis of new test cases on the mutation coverage scores:
+
+![Tests_Added](https://user-images.githubusercontent.com/81201946/158870533-45fda11d-e5bc-46cc-99ab-3788f7c7338d.jpg)
+
+Tests were added to 7 different test classes. These tests increased the overall mutation coverage depending on how many mutants were already covered in the already existing tests. 
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
+The mutation coverage score is affected by the equivalent mutants since they can’t be killed. Therefore there will always be mutants that can’t be killed and the score will never be able to reach 100% as long as equivalent mutants are part of the total mutants. 
+
+Equivalent mutants affected our results to a great extent. The first issue we faced had to do with our understanding of what an equivalent mutant is. We mainly didn’t understand that they would appeared in the pitest results. This resulted in more time spent trying to kill mutants that were unkillable. We also determined, through hours of trial and error, that for the DataUtilities class the majority of mutants that were alive when we started the lab were equivalent mutants. Due to our mutation coverage already being high for the class finding new mutants that could actually be killed became next to impossible and the group was only able to find 5 mutant that our test cases could kill.
+
 # A discussion of what could have been done to improve the mutation score of the test suites
 
+In order to improve the mutation coverage we could have spent more time analyzing the code line by line with all the possible mutant combinations. It would be very beneficial to spend time examining all the possible combinations the mutants created.
+It was easy to follow all possible variable and path combinations with simple methods. For instance methods involving a return or even just a single if statement. For more complex methods it would be more difficult but even more beneficial to slowly go through the code to understand how the mutant changes it, and therefore how different inputs could kill the mutant.
+
+Having more experience with coding, and especially experience with mutant testing would have come in handy while trying to follow complex paths caused by mutants. Having more practice with the specific skill would enable us to understand what works and what wouldn’t work when trying to kill mutants.
+
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
+
+Mutation testing is important as it greatly improves the quality of the source code. It ensures coverage of the code and is a great way to verify boundary cases for individual lines of code. It is a great addition to help establish good source code and create better tests.
+
+Advantages
+Great for catching small errors in the source code
+Finding weaknesses in the source code
+Improves quality of the source code
+Helps to figure out how good the test suite is for testing the code base
+Gives a high coverage of the code
+Creates a stable and reliable system
+
+Disadvantages 
+Requires tools to effectively use, otherwise it would be near impossible to use
+Requires a lot of mutants to have a positive effect of quality
+The testers need a good understanding of mutation testing to be effective
+Requires the source code
+It takes time to identify ways to kill mutants and to recognize equivalent mutants
 
 # Explain your SELENUIM test case design process
 
@@ -37,8 +81,31 @@ Original Values of Mutation coverage for DataUtilities class and the Range class
 
 # How the team work/effort was divided and managed
 
+In order to divide the work for this assignment, two team members (Chace and Tony) focused on creating mutation tests for the Range class, and the other two team members (Chad and Oliseh) focused on creating mutation tests for the DataUtilities class. Throughout this process, all team members kept in contact in order to resolve any technical difficulties that arose and to ensure that everyone had the same mutation test scores on their computers.
+
+In particular, team members identified and wrote tests on the lowest scoring methods for mutation coverage. The lowest scoring methods were the ones that had larger denominators (which indicates that the method had more mutations) and smaller numerators (indicating that less mutators were killed when Pitest was used). Then, the methods were split evenly amongst the team members to work on by creating more mutation tests to increase the coverage score.
+
+For the GUI test, one team member, Chace, identified eight different functionalities on the BestBuy website. Then, each team member took two functionalities that were not already taken and wrote Selenium tests for them, then tested the same functionalities with Sikulix.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
+One of the earliest challenges in this assignment was due to the wording found in the assignment specification document provided on GitHub. We were confused if we had to run Pitest on the source code of JFreeChart or if we had to run Pitest on our test suite. After experimenting with the Pitest, we found that it made sense for us to run Pitest on our own test suite.
+
+DataUtilities already had very high mutation coverage before starting this lab due to our effective testing strategy in Assignment 3. After spending hours creating tests and looking for mutants to kill we decided that the overwhelming majority of the surviving mutants were equivalent mutants and that continuing with creating tests would be inefficient. 
+
+We found that the Selenium IDE often caused our pages to freeze, which would mean that we are unable to complete our Selenium tests and therefore had to start from the beginning. One group member, Tony, found that it was slightly more effective to use Firefox rather than using Chrome for Selenium. 
+
+When a test is run multiple times on a website, the website may block the browser from using certain functionalities, such as adding an item to the cart. After spending some time dealing with this problem, we found that deleting the cookies for the BestBuy website each time after a test is run will solve this problem. However, this takes away time from the development and testing of the Selenium tests.
+
+In the end, all group members were able to gain experience with mutation testing and GUI testing, although we were not able to create mutation tests since we already had a high mutation coverage test score from the tests that we had created in Assignment. Initially, we had thought that the GUI testing would be easy, but technical difficulties with Selenium meant that we had to spend a lot more time testing the BestBuy website than needed.
+
 # Comments/feedback on the lab itself
+
+Compared to the previous labs, this lab assignment was considerably more difficult, particularly in Part 1. This was not due to the concepts utilized in this assignment, but rather the set up and running of the tools used for this assignment. Therefore, it took us more time than the previous labs to figure out how to create the tests. This assignment would have benefited by providing clearer instructions on setting up the project environment so that students spend less time on set up and more time on creating mutation tests and practicing GUI tests.
+
+Another issue with this lab was the unclear instructions. For instance, Section 2.5.4 mentions sample test cases, but our group was unable to locate these sample tests. After some time, we decided to come back to this issue and start by creating the mutation tests. This assignment would have also benefited by ensuring that all the necessary files are present in the provided artifacts before making this assignment live to students.  
+
+Furthermore, the lab report had many questions. Given that this assignment had two parts and that we were given the same amount of time as the other assignments to complete this lab, it would have benefitted us if there were fewer questions present in the lab report. Asking us more questions does not necessarily help us to gain a better understanding of the material, as the lab report is completed after the completion of Parts 1 and 2.
+
+However, once we were able to overcome the technical hurdles with this lab, all group members were able to gain experience with mutation tests and GUI tests. As such, we can say that this assignment was good for our learning by reinforcing the concepts that were taught in the lectures. 
 
