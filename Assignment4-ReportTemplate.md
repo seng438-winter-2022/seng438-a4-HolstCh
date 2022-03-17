@@ -8,14 +8,17 @@
 | Chad Holst          |   |
 | Chace Nielson       |   |
 | Tony Vo             |   |
-| Olisehemeka Chukwuma
+| Olisehemeka Chukwuma|   |
 
 # Introduction
+
 In this assignment, we were tasked with engaging with two different kinds of testing: Mutation Testing and Graphical User interface (GUI) testing. Mutation testing, also known as Fault-based testing, involves the injection of artificial faults into the System Under Test (SUT). Syntactic (syntax-based) variations are applied in a systematic way to the SUT to create faulty versions of the program which exhibit different behaviors in comparison to the program's actual functionality. Mutant testing then seeks to help create a test suite that will be able to catch these faults.  In the first part of the lab. We injected mutation faults into a Java code-base using a mutation testing tool, the PIT Mutation test tool. Interpreted the mutation coverage data and developed new test cases to increase the mutation coverage of our test suites for the DataUtilities class and Range class. In the second part of the lab, we engaged in GUI test automation, recording and playing, which involved testing a product that implemented a graphical user interface using testing software tools, Selenium and SikuliX. We focused on semi-automated test generation using the capturing and replaying of user actions on the GUI using the testing tools.
 
 # Analysis of 10 Mutants of the Range class 
+
 ![Mutants_1](https://user-images.githubusercontent.com/81201946/158873389-4a2ac03a-0735-491e-b0b5-0391936a5384.jpg)
 ![Mutants_2](https://user-images.githubusercontent.com/81201946/158873754-ea5f1fea-a49a-4d0b-976e-e773549788d1.jpg)
+
 # Report all the statistics and the mutation score for each test class
 
 Original Values of Mutation coverage for DataUtilities class and the Range class before test suite modification:
@@ -33,6 +36,7 @@ DataUtilities already had very high Mutation coverage before starting this lab. 
 Range had a much lower mutation converge to start with and many more methods than DataUtilities. This made it easier to find mutants and to kill an additional 11% of them
 
 # Analysis drawn on the effectiveness of each of the test classes
+
 Analysis of new test cases on the mutation coverage scores:
 
 ![Tests_Added](https://user-images.githubusercontent.com/81201946/158870533-45fda11d-e5bc-46cc-99ab-3788f7c7338d.jpg)
@@ -73,12 +77,55 @@ It takes time to identify ways to kill mutants and to recognize equivalent mutan
 
 # Explain your SELENUIM test case design process
 
+SELENIUM Tests
+Login
+Signout
+Add item to cart
+Remove item to cart
+Search for item and click on item
+Go to best buy facebook page
+Sign up for newsletter
+Change to french site
+
+Design process 
+First a website was chosen to carry the Graphical User Interface Testing, the website of choice being: https://www.bestbuy.ca/en-ca
+Next, different functionalities were picked to be tested on the website, the total number of functionalities being 8. Tests were picked while making sure that they did not share a lot of similar functionality so as to help provide a more diverse set of test cases. Different areas of the web page were visited to observe the number of different buttons, hyperlinks and text boxes that could be tested. Input data was also chosen to test functionality that involved user input.
+Login (assert value for password)
+an assert value method for a valid password input and the test passed.
+an assert value method for invalid password input and the test failed.
+Forget Password (assert email for sending password change)
+an assert value method for a valid email input and the test passed.
+an assert value for invalid email input and the test failed.
+Add item to cart
+Assert title for the cart page and the test passed
+Remove item to cart
+Assert text for the cart page to indicate that no items are in the cart and the test passed.
+Search for item and click on item
+Search for jack reach and click on movie, assert the title is the jack reacher dvd page and the test passes
+Change search to predator and the page will not be found and assert causes the test to fail
+Go to best buy facebook page
+After scrolling to the end of the website, in the bottom right corner, click on the facebook logo under the newsletter textbox 
+Assert title for the facebook page passes the test 
+Sign up for newsletter
+After scrolling to the end of the website, in the bottom right corner, there is a textbox available to insert your email into the textbox 
+
+
+Change to french site
+After clicking on french page assert that the page title should be the title french version of best buy and test passed
+Change click on french page to clicking on cart and assert causes the test to fail as title of current page is now wrong
+Then each group member picked 2 functionalities to test using the Selenium IDE 
+
 # Explain the use of assertions and checkpoints
 
-# how did you test each functionaity with different test data
+In regards to GUI testing with Selenium, assertions are commands that can be used to check if a certain condition has been met. With the assert command, a Selenium test will fail if the condition is not met. As such, assertions can be used to verify that a test has reached the desired location of a website before continuing on with the test, such as asserting that the page has loaded the login page before entering the test login information. 
 
+Checkpoints (or breakpoints in Selenium) are commands used to pause or stop the test from running at specified points in the code. Checkpoints can be used to debug Selenium tests for the tester to check if Selenium IDE has reached the anticipated point in the web application before continuing on with the rest of the test.
+
+# How did you test each functionality with different test data
+
+Testing each functionality with different test data greatly depends on the nature of the functionality. For example, to test the item search, the string containing the item to be searched for can be changed to find another item or replaced with a random combination of characters to check the behavior of an invalid search. On a different functionality such as removing an item from the cart, one test can be run when an item is present in the cart, and another test can be run when there are no items present in the cart.
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
-
+![Comparison](https://user-images.githubusercontent.com/81201946/158875397-405adeb1-350c-48cd-b6ae-51efdb664810.jpg)
 # How the team work/effort was divided and managed
 
 In order to divide the work for this assignment, two team members (Chace and Tony) focused on creating mutation tests for the Range class, and the other two team members (Chad and Oliseh) focused on creating mutation tests for the DataUtilities class. Throughout this process, all team members kept in contact in order to resolve any technical difficulties that arose and to ensure that everyone had the same mutation test scores on their computers.
