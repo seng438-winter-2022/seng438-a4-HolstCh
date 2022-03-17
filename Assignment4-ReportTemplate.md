@@ -157,7 +157,8 @@ Furthermore, the lab report had many questions. Given that this assignment had t
 
 However, once we were able to overcome the technical hurdles with this lab, all group members were able to gain experience with mutation tests and GUI tests. As such, we can say that this assignment was good for our learning by reinforcing the concepts that were taught in the lectures. 
 
-SENG 438 Assignment 3 Test Designs:
+                                              SENG 438 Assignment 3 Test Designs:
+                                          
 note: test 69 isn’t running for pitests so when running tests it will give one less test than are found in test suite
 note: 20 tests were written for lab 4 (tests 103-122)
 
