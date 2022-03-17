@@ -171,6 +171,10 @@ Start of new tests for Lab 3:
 ![7](https://user-images.githubusercontent.com/81201946/158880363-b84bc994-6c71-464a-a2cf-cdee3c6f577c.jpg)
 ![8](https://user-images.githubusercontent.com/81201946/158880370-e7f4382e-6e53-4102-a3c3-9d9d592cbb2a.jpg)
 ![9](https://user-images.githubusercontent.com/81201946/158880405-2f7686e2-2140-43ca-a877-4e3fa74d9d23.jpg)
-                                                         
-
-
+![10](https://user-images.githubusercontent.com/81201946/158880666-26e2d1e6-2ccc-41ac-81c6-bae139fa6538.jpg)
+Start of new tests for Lab 4:
+![11](https://user-images.githubusercontent.com/81201946/158881006-6bcdb303-2b56-406f-9078-2066535d99c9.jpg)
+![12](https://user-images.githubusercontent.com/81201946/158881016-ed56b489-8eeb-48dd-9efa-e2efd6639c90.jpg)
+![13](https://user-images.githubusercontent.com/81201946/158881027-ed99a48b-4814-4bef-ab47-fb6138f280c1.jpg)
+Tests that were modified from A2:
+![14](https://user-images.githubusercontent.com/81201946/158881142-caf726d0-e423-4f93-a480-add8d2a1efb7.jpg)                          
