@@ -15,6 +15,7 @@ In this assignment, we were tasked with engaging with two different kinds of tes
 # Analysis of 10 Mutants of the Range class 
 Original Values of Mutation coverage for DataUtilities class and the Range class before test suite modification:
 
+![Coverage_Before](https://user-images.githubusercontent.com/81201946/158865790-d76111e5-5868-4ed9-9c90-6519eb7092e2.png)
 
 # Report all the statistics and the mutation score for each test class
 
