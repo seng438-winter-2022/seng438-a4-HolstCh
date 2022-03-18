@@ -1,14 +1,12 @@
 **SENG 438 - Software Testing, Reliability, and Quality**
 
-**Lab. Report \#4 – Mutation Testing and Web app testing**
+> **Assignment #4**
 
-| Group \#:           |   |
-|---------------------|---|
-| Student Names:      |   |
-| Chad Holst          |   |
-| Chace Nielson       |   |
-| Tony Vo             |   |
-| Olisehemeka Chukwuma|   |
+**Lab. Report #4 – Code Coverage, Adequacy Criteria and Test Case Correlation**
+
+| Group \#:       | G38  |
+|-----------------|---|
+| Student Names:  | Tony Vo, Chace Nielson, Chad Holst, Olisehemeka Chukwuma |
 
 # Introduction
 
@@ -21,19 +19,19 @@ In this assignment, we were tasked with engaging with two different kinds of tes
 
 # Report all the statistics and the mutation score for each test class
 
-Original Values of Mutation coverage for DataUtilities class and the Range class before test suite modification:
+Original values of mutation coverage for the DataUtilities class and the Range class before test suite modification:
 
 ![Coverage_Before](https://user-images.githubusercontent.com/81201946/158865790-d76111e5-5868-4ed9-9c90-6519eb7092e2.png)
 
-New Values of Mutation coverage for DataUtilities class and the Range class after test suite modification:
+New values of mutation coverage for the DataUtilities class and the Range class after test suite modification:
 
 ![After_Coverage](https://user-images.githubusercontent.com/81201946/158866161-8d1c5a3e-c95c-4e93-897a-535471e493ea.png)
 
-Range Mutation coverage increase from 62% (782/1259) to 73% (913/1259) of mutants killed. It had a total of 131 mutant killed by additional tests.
-DataUtilities Mutation coverage increase from 86% (593/687) to 87% (598/687) of mutants killed. It had a total of 5 mutants killed by additional tests.
+Range mutation coverage increased from 62% (782/1259) to 73% (913/1259) of mutants killed. It had a total of 131 mutant killed by additional tests.
+DataUtilities mutation coverage increase from 86% (593/687) to 87% (598/687) of mutants killed. It had a total of 5 mutants killed by additional tests.
 
-DataUtilities already had very high Mutation coverage before starting this lab. After spending hours creating tests and looking for mutants to kill we decided that the overwhelming majority of the surviving mutants were equivalent mutants and that continuing with creating tests would be inefficient. 
-Range had a much lower mutation converge to start with and many more methods than DataUtilities. This made it easier to find mutants and to kill an additional 11% of them
+DataUtilities already had very high mutation coverage before starting this lab. After spending hours creating tests and looking for mutants to kill, we decided that the overwhelming majority of the surviving mutants were equivalent mutants and that continuing with creating tests would be inefficient. 
+Range had a much lower mutation converge to start with and many more methods than DataUtilities. This made it easier to find mutants and to kill an additional 11% of them.
 
 # Analysis drawn on the effectiveness of each of the test classes
 
@@ -45,66 +43,67 @@ Tests were added to 7 different test classes. These tests increased the overall 
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
-The mutation coverage score is affected by the equivalent mutants since they can’t be killed. Therefore there will always be mutants that can’t be killed and the score will never be able to reach 100% as long as equivalent mutants are part of the total mutants. 
+The mutation coverage score is affected by the equivalent mutants since they can’t be killed. Therefore, there will always be mutants that can’t be killed and the score will never be able to reach 100% as long as equivalent mutants are part of the total mutants. 
 
-Equivalent mutants affected our results to a great extent. The first issue we faced had to do with our understanding of what an equivalent mutant is. We mainly didn’t understand that they would appeared in the pitest results. This resulted in more time spent trying to kill mutants that were unkillable. We also determined, through hours of trial and error, that for the DataUtilities class the majority of mutants that were alive when we started the lab were equivalent mutants. Due to our mutation coverage already being high for the class finding new mutants that could actually be killed became next to impossible and the group was only able to find 5 mutant that our test cases could kill.
+Equivalent mutants affected our results to a great extent. The first issue we faced had to do with our understanding of what an equivalent mutant is. We mainly didn’t understand that they would appeared in the Pitest results. This resulted in more time spent trying to kill mutants that were unkillable. We also determined, through hours of trial and error, that for the DataUtilities class, the majority of mutants that were alive when we started the lab were equivalent mutants. Due to our mutation coverage already being high for the class, finding new mutants that could actually be killed became next to impossible and the group was only able to find 5 mutant that our test cases could kill.
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
 In order to improve the mutation coverage we could have spent more time analyzing the code line by line with all the possible mutant combinations. It would be very beneficial to spend time examining all the possible combinations the mutants created.
-It was easy to follow all possible variable and path combinations with simple methods. For instance methods involving a return or even just a single if statement. For more complex methods it would be more difficult but even more beneficial to slowly go through the code to understand how the mutant changes it, and therefore how different inputs could kill the mutant.
+It was easy to follow all possible variable and path combinations with simple methods. For instance, methods involving a return or even just a single if statement. For more complex methods, it would be more difficult but even more beneficial to slowly go through the code to understand how the mutant changes it, and therefore how different inputs could kill the mutant.
 
-Having more experience with coding, and especially experience with mutant testing would have come in handy while trying to follow complex paths caused by mutants. Having more practice with the specific skill would enable us to understand what works and what wouldn’t work when trying to kill mutants.
+Having more experience with coding, and especially experience with mutant testing would have come in handy while trying to follow complex paths caused by mutants. Having more practice with this specific skill would enable us to understand what works and what wouldn’t work when trying to kill mutants.
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
 Mutation testing is important as it greatly improves the quality of the source code. It ensures coverage of the code and is a great way to verify boundary cases for individual lines of code. It is a great addition to help establish good source code and create better tests.
 
 Advantages
-Great for catching small errors in the source code
-Finding weaknesses in the source code
-Improves quality of the source code
-Helps to figure out how good the test suite is for testing the code base
-Gives a high coverage of the code
-Creates a stable and reliable system
+* Great for catching small errors in the source code
+* Helps to find weaknesses in the source code
+* Improves quality of the source code
+* Helps to figure out how good the test suite is for testing the code base
+* Gives a high coverage of the code
+* Creates a stable and reliable system
 
 Disadvantages 
-Requires tools to effectively use, otherwise it would be near impossible to use
-Requires a lot of mutants to have a positive effect of quality
-The testers need a good understanding of mutation testing to be effective
-Requires the source code
-It takes time to identify ways to kill mutants and to recognize equivalent mutants
+* Requires tools to effectively create the mutation tests, otherwise it would be nearly impossible to do manually
+* Requires a lot of mutants to have a positive effect of quality
+* The testers need a good understanding of mutation testing to be effective
+* Requires the source code
+* It takes time to identify ways to kill mutants and to recognize equivalent mutants
 
-# Explain your SELENUIM test case design process
+# Explain your Selenium test case design process
 
-First a website was chosen to carry the Graphical User Interface Testing, the website of choice being: https://www.bestbuy.ca/en-ca
+First a website was chosen to carry the Graphical User Interface testing, the website of choice being: [BestBuy](https://www.bestbuy.ca/en-ca).
 Next, different functionalities were picked to be tested on the website, the total number of functionalities being 8. Tests were picked while making sure that they did not share a lot of similar functionality so as to help provide a more diverse set of test cases. Different areas of the web page were visited to observe the number of different buttons, hyperlinks and text boxes that could be tested. Input data was also chosen to test functionality that involved user input. The following is a list of the designs we decided to choose:
 
 1. Login (assert value for password)
-    - an assert value method for a valid password input and the test passed.
-    - an assert value method for invalid password input and the test failed.
+    - An assert value method for a valid password input and the test passed.
+    - An assert value method for invalid password input and the test failed.
 2. Forget Password (assert email for sending password change)
-    - an assert value method for a valid email input and the test passed.
-    - an assert value for invalid email input and the test failed.
+    - An assert value method for a valid email input and the test passed.
+    - An assert value for invalid email input and the test failed.
 3. Add item to cart
-    - Assert title for the cart page and the test passed
+    - Assert title for the cart page and the test passed.
+    - We were unable to create a test that failed for this particular functionality. Although we could have a test fail by searching for an invalid item, this is already covered by the test “Search for an item and click on item”. Therefore, without access to the source code, we cannot design and create a test that will fail this functionality.
 4. Remove item to cart
     - Assert text for the cart page to indicate that no items are in the cart and the test passed.
+    - Similar to the functionality above, we are also unable to create a test that will fail for this case. This test assumes that there is already an item present in the cart, then tries to remove that item. Hence, this test would fail if there are no items in the cart. Creating two tests for this particular case would be redundant.
 5. Search for item and click on item
-    - Search for jack reach and click on movie, assert the title is the jack reacher dvd page and the test passes
-    - Change search to predator and the page will not be found and assert causes the test to fail
+    - Search for “Jack Reacher” and click on the movie, assert the title is the “Jack Reacher” DVD page and the test passes.
+    - Change search to “Predator” and the page will not be found and assert causes the test to fail.
 6. Go to best buy facebook page
-    - After scrolling to the end of the website, in the bottom right corner, click on the facebook logo under the newsletter textbox 
-    - Assert title for the facebook page passes the test 
+    - After scrolling to the end of the website, in the bottom right corner, click on the Facebook logo under the newsletter textbox. 
+    - Assert title is for the Facebook page to pass the test. 
 7. Sign up for newsletter
-    - After scrolling to the end of the website, in the bottom right corner, there is a textbox available to insert your email into the textbox 
-    - Assert title was used to check if the page remained the same after signing up for the newsletter which is the normal functionality 
-8. Change to french site
-    - After clicking on french page assert that the page title should be the title french version of best buy and test passed
-    - Change click on french page to clicking on cart and assert causes the test to fail as title of current page is now wrong
+    - After scrolling to the end of the website, in the bottom right corner, there is a textbox available to insert your email into the textbox. 
+    - Assert title was used to check if the page remained the same after signing up for the newsletter, which is the normal functionality. 
+8. Change to French site
+    - After clicking on the French page, assert that the page title should be the title of the BestBuy website in French, and the test passed.
+    - Change click on French page to clicking on cart and assert causes the test to fail, as title of current page is now wrong.
     
-Then, each group member picked 2 functionalities to test using the Selenium IDE 
-
+Then, each group member picked 2 functionalities to test using the Selenium IDE, which are included here: [Selenium GUI tests](Selenium_Tests/) and carried out the tests as written above.
 
 # Explain the use of assertions and checkpoints
 
@@ -115,9 +114,11 @@ Checkpoints (or breakpoints in Selenium) are commands used to pause or stop the 
 # How did you test each functionality with different test data
 
 Testing each functionality with different test data greatly depends on the nature of the functionality. For example, to test the item search, the string containing the item to be searched for can be changed to find another item or replaced with a random combination of characters to check the behavior of an invalid search. On a different functionality such as removing an item from the cart, one test can be run when an item is present in the cart, and another test can be run when there are no items present in the cart.
+
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 ![Compare](https://user-images.githubusercontent.com/81201946/158878785-8fda415d-ccad-4d24-90fc-f5fa40fe8306.jpg)
+
 # How the team work/effort was divided and managed
 
 In order to divide the work for this assignment, two team members (Chace and Tony) focused on creating mutation tests for the Range class, and the other two team members (Chad and Oliseh) focused on creating mutation tests for the DataUtilities class. Throughout this process, all team members kept in contact in order to resolve any technical difficulties that arose and to ensure that everyone had the same mutation test scores on their computers.
