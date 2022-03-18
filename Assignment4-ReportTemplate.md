@@ -77,43 +77,34 @@ It takes time to identify ways to kill mutants and to recognize equivalent mutan
 
 # Explain your SELENUIM test case design process
 
-SELENIUM Tests
-Login
-Signout
-Add item to cart
-Remove item to cart
-Search for item and click on item
-Go to best buy facebook page
-Sign up for newsletter
-Change to french site
-
-Design process 
 First a website was chosen to carry the Graphical User Interface Testing, the website of choice being: https://www.bestbuy.ca/en-ca
-Next, different functionalities were picked to be tested on the website, the total number of functionalities being 8. Tests were picked while making sure that they did not share a lot of similar functionality so as to help provide a more diverse set of test cases. Different areas of the web page were visited to observe the number of different buttons, hyperlinks and text boxes that could be tested. Input data was also chosen to test functionality that involved user input.
-Login (assert value for password)
-an assert value method for a valid password input and the test passed.
-an assert value method for invalid password input and the test failed.
-Forget Password (assert email for sending password change)
-an assert value method for a valid email input and the test passed.
-an assert value for invalid email input and the test failed.
-Add item to cart
-Assert title for the cart page and the test passed
-Remove item to cart
-Assert text for the cart page to indicate that no items are in the cart and the test passed.
-Search for item and click on item
-Search for jack reach and click on movie, assert the title is the jack reacher dvd page and the test passes
-Change search to predator and the page will not be found and assert causes the test to fail
-Go to best buy facebook page
-After scrolling to the end of the website, in the bottom right corner, click on the facebook logo under the newsletter textbox 
-Assert title for the facebook page passes the test 
-Sign up for newsletter
-After scrolling to the end of the website, in the bottom right corner, there is a textbox available to insert your email into the textbox 
+Next, different functionalities were picked to be tested on the website, the total number of functionalities being 8. Tests were picked while making sure that they did not share a lot of similar functionality so as to help provide a more diverse set of test cases. Different areas of the web page were visited to observe the number of different buttons, hyperlinks and text boxes that could be tested. Input data was also chosen to test functionality that involved user input. The following is a list of the designs we decided to choose:
 
+1. Login (assert value for password)
+    - an assert value method for a valid password input and the test passed.
+    - an assert value method for invalid password input and the test failed.
+2. Forget Password (assert email for sending password change)
+    - an assert value method for a valid email input and the test passed.
+    - an assert value for invalid email input and the test failed.
+3. Add item to cart
+    - Assert title for the cart page and the test passed
+4. Remove item to cart
+    - Assert text for the cart page to indicate that no items are in the cart and the test passed.
+5. Search for item and click on item
+    - Search for jack reach and click on movie, assert the title is the jack reacher dvd page and the test passes
+    - Change search to predator and the page will not be found and assert causes the test to fail
+6. Go to best buy facebook page
+    - After scrolling to the end of the website, in the bottom right corner, click on the facebook logo under the newsletter textbox 
+    - Assert title for the facebook page passes the test 
+7. Sign up for newsletter
+    - After scrolling to the end of the website, in the bottom right corner, there is a textbox available to insert your email into the textbox 
+    - Assert title was used to check if the page remained the same after signing up for the newsletter which is the normal functionality 
+8. Change to french site
+    - After clicking on french page assert that the page title should be the title french version of best buy and test passed
+    - Change click on french page to clicking on cart and assert causes the test to fail as title of current page is now wrong
+    
+Then, each group member picked 2 functionalities to test using the Selenium IDE 
 
-Change to french site
-After clicking on french page assert that the page title should be the title french version of best buy and test passed
-Change click on french page to clicking on cart and assert causes the test to fail as title of current page is now wrong
-Then each group member picked 2 functionalities to test using the Selenium IDE 
 
 # Explain the use of assertions and checkpoints
 
