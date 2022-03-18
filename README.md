@@ -15,3 +15,4 @@ Group members: Tony Vo, Chace Nielson, Chad Holst, Olisehemeka Chukwuma
 - [JFreeChart Range and DataUtilities Classes](src/org/jfree/data)
 - [Lab Report](Assignment4-LabReport.md) 
 - [Referenced Library](Referenced%20Libraries/)
+- [Selenium GUI Tests](Selenium_Tests/)
