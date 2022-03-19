@@ -2,11 +2,41 @@
 
 > **Assignment #4**
 
-**Lab. Report #4 – Code Coverage, Adequacy Criteria and Test Case Correlation**
+**Lab. Report #4 – Mutation Testing and Web App Testing**
 
 | Group \#:       | G38  |
 |-----------------|---|
 | Student Names:  | Tony Vo, Chace Nielson, Chad Holst, Olisehemeka Chukwuma |
+
+- [1 Introduction](#introduction)
+
+- [2 Analysis of 10 Mutants of the Range class](#analysis-of-10-mutants-of-the-range-class)
+
+- [3 Report all the statistics and the mutation score for each test class](#report-all-the-statistics-and-the-mutation-score-for-each-test-class)
+
+- [4 Analysis drawn on the effectiveness of each of the test classes](#analysis-drawn-on-the-effectiveness-of-each-of-the-test-classes)
+
+- [5 A discussion on the effect of equivalent mutants on mutation score accuracy](#a-discussion-on-the-effect-of-equivalent-mutants-on-mutation-score-accuracy)
+
+- [6 A discussion of what could have been done to improve the mutation score of the test suites](#a-discussion-of-what-could-have-been-done-to-improve-the-mutation-score-of-the-test-suites)
+
+- [7 Why do we need mutation testing? Advantages and disadvantages of mutation testing](#why-do-we-need-mutation-testing-advantages-and-disadvantages-of-mutation-testing)
+
+- [8 Explain your Selenium test case design process](#explain-your-selenium-test-case-design-process)
+
+- [9 Explain the use of assertions and checkpoints](#explain-the-use-of-assertions-and-checkpoints)
+
+- [10 How did you test each functionality with different test data](#how-did-you-test-each-functionality-with-different-test-data)
+
+- [11 Discuss advantages and disadvantages of Selenium vs. Sikulix](#discuss-advantages-and-disadvantages-of-selenium-vs-sikulix)
+
+- [12 How the team work/effort was divided and managed](#how-the-team-workeffort-was-divided-and-managed)
+
+- [13 Difficulties encountered, challenges overcome, and lessons learned](#difficulties-encountered-challenges-overcome-and-lessons-learned)
+
+- [14 Comments/feedback on the lab itself](#commentsfeedback-on-the-lab-itself)
+
+- [Appendix A: Full test suite of Assignment 3](#appendix-a-seng-438-assignment-4-test-designs)
 
 # Introduction
 
@@ -149,11 +179,11 @@ Furthermore, the lab report had many questions. Given that this assignment had t
 
 However, once we were able to overcome the technical hurdles with this lab, all group members were able to gain experience with mutation tests and GUI tests. As such, we can say that this assignment was good for our learning by reinforcing the concepts that were taught in the lectures. 
 
-                                              SENG 438 Assignment 4 Test Designs:
+# Appendix A: SENG 438 Assignment 4 Test Designs:
                                           
-note: test 69 isn’t running for pitests so when running tests it will give one less test than are found in test suite
+Note: Test #69 lead to a failure, so it was commented out so that when Pitest is run, it will give one less test than are found in test suite.
 
-note: 20 tests were written for lab 4 (tests 103-122)
+Note: 20 tests were written for Assignment 4 (tests #103 - #122).
 
 ![1](https://user-images.githubusercontent.com/81201946/158879751-0069b969-f694-4791-8017-887fe1f58376.jpg)
 ![2](https://user-images.githubusercontent.com/81201946/158879836-436f5882-c6bc-464e-9df4-efc8dbfbc942.jpg)
