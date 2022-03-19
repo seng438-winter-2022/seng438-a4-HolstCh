@@ -51,7 +51,7 @@ In this assignment, we were tasked with engaging with two different kinds of tes
 
 Original values of mutation coverage for the DataUtilities class and the Range class before test suite modification:
 
-![Coverage_Before](https://user-images.githubusercontent.com/81201946/158865790-d76111e5-5868-4ed9-9c90-6519eb7092e2.png)
+![Coverage01](https://user-images.githubusercontent.com/81201946/159099231-04b12519-07b4-48bb-aadb-7e779f2e9c39.jpg)
 
 New values of mutation coverage for the DataUtilities class and the Range class after test suite modification:
 
