@@ -55,7 +55,7 @@ Original values of mutation coverage for the DataUtilities class and the Range c
 
 New values of mutation coverage for the DataUtilities class and the Range class after test suite modification:
 
-![After_Coverage](https://user-images.githubusercontent.com/81201946/158866161-8d1c5a3e-c95c-4e93-897a-535471e493ea.png)
+![Coverage02](https://user-images.githubusercontent.com/81201946/159099296-faf83593-1beb-43b2-bbaf-ebd3768f53ff.jpg)
 
 Range mutation coverage increased from 62% (782/1259) to 73% (913/1259) of mutants killed. It had a total of 131 mutant killed by additional tests.
 DataUtilities mutation coverage increase from 86% (593/687) to 87% (598/687) of mutants killed. It had a total of 5 mutants killed by additional tests.
